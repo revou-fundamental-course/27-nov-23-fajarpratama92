@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Triangle Calculator</title>
+</head>
+<body>
+    <header class="header-katik" id="head-nav">
+        <h1>Welcome to Katik</h1>
+        <p>Hi folks!. Welcome to Katik :]</p>
+        <p>A web app that can calculate the area and perimeter of two-dimensional shapes</p>
+        <nav class="navigation">
+            <a href="#area-section">Area of Triangle</a>
+            <br>
+            <a href="">Perimeter of Triangle</a>
+        </nav>
+    </header>
+    <main class="input-luas-section">
+        <div>
+            <h2 id="area-section">Area of Triangle</h2>
+        </div>
+        <img class="area-formula" src="https://helpingwithmath.com/wp-content/uploads/2021/11/image-47.png" alt="area-of-triangle">
+        <p>Formula for the area of a triangle is:</p>
+        <p id="area-formula-text">A= 1/2 x b x h</p>
+        <ul>where
+            <li>A = Area</li>
+            <li>b = base length</li>
+            <li>h = height of the triangle</li>
+        </ul>
+        <hr>
+        <h2>Calculate the area of a triangle</h2>
+        <input type="number" placeholder="Base length value" id="input-base" class="katik-input">
+        <input type="number" placeholder="Height value" id="input-height" class="katik-input">
+        <div class="buttons">
+            <button id="calculate-Area">Calculate</button>
+            <button id="reset-area">Reset</button>
+        </div>
+    </main>
+</body>
+</html>
