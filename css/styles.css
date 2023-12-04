@@ -1,60 +1,90 @@
+/* HEADER SECTION */
+
 body {
     padding: 0px 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/c6/Blackboard.png);
-    background-size: cover;
+    background-size: contain;
 }
 
 h1 {
     padding: 0px;
-    margin-top: 0px;
+    margin-top: 10px;
+    font-size: 60px;
 }
 
-.header-katik> p {
-    margin: 2px;
+.header> h2 {
+    margin-top: -15px;
+    margin-bottom: 0px;
 }
 
-.header-katik {
-    color: white;
+.header {
+    color: whitesmoke;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    top: 0;
+     left: 0;
+    width: 100%;
+    z-index: 10;
+    background-image: url("https://img.freepik.com/premium-photo/black-board-chalkboard-wall-background_28629-1625.jpg");
+
 }
 
 .navigation {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
+    margin-top: 15px;
     align-self: center;
     width: 100%;
     text-align: center;
 }
 
-.navigation> a {
-    width: auto;
-    background-color: gray;
-    color: white;
-    text-decoration: none;
+.nav-button {
+    margin-bottom: 10px;
 }
 
-/* INPUT SECTION */
+.nav-button> a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* AREA SECTION */
+
+.area-section {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+#area-section-anchor {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 0%;
+    margin-bottom: 170px;
+    color: white;
+    width: 100%;
+    background-color: blue;
+}
+
+.area-section>h2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 40px;
+    padding: 50px 0px;
+    color: white;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 50%);
+}
 
 .area-formula {
     display: flex;
     align-self: center;
     width: 150px;
     height: 150px;
-}
-
-h2 {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 50px 0px;
-    color: white;
-    width: 100%;
-    background-color: gray;
 }
 
 ul {
@@ -73,16 +103,16 @@ main {
     color: white;
 }
 
-.input-luas-section {
+.input-area {
     display: flex;
     flex-direction: column;
-}
+  }
 
 #area-formula-text {
     text-align: center;
 }
 
-.katik-input {
+.input {
     outline: none;
     border-radius: 10px;
     padding: 5px;
@@ -90,7 +120,7 @@ main {
     border-color: gray;
 }
 
-#result-box {
+.result-box {
     margin: 10px;
 }
 
@@ -98,7 +128,7 @@ main {
     color: rgb(209, 207, 207);
 }
 
-.katik-input:focus {
+.input:focus {
     border-color: rgb(10, 136, 204);
 }
 
@@ -110,7 +140,8 @@ main {
 }
 
 button {
-    background-color: rgb(255, 122, 50);
+    background-color: rgb(188, 188, 188);
+    color: whitesmoke;
     padding: 10px 20px;
     border-radius: 10px;
     width: 100;
@@ -118,10 +149,55 @@ button {
 }
 
 button:hover {
-    background-color: rgb(191, 90, 35)
+    background-color: rgb(155, 155, 155)
 }
 
 button:active {
-    background-color: rgb(112, 53, 21);
+    background-color: rgb(87, 86, 86);
     transform: translateY(2px);
+}
+
+/* PERIMETER SECTION */
+
+.perimeter-section {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+#perimeter-section-anchor {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 70px;
+    margin-bottom: 100px;
+    color: white;
+    width: 100%;
+}
+
+.perimeter-section>h2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 40px;
+    padding: 50px 0px;
+    color: white;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 50%);
+}
+
+.perimeter-formula {
+    display: flex;
+    align-self: center;
+    width: 150px;
+    height: 150px;
+}
+
+.input-perimeter {
+    display: flex;
+    flex-direction: column;
+  }
+
+#perimeter-formula-text {
+    text-align: center;
 }

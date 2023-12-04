@@ -7,36 +7,65 @@
     <title>Triangle Calculator</title>
 </head>
 <body>
-    <header class="header-katik" id="head-nav">
-        <h1>Welcome to Katik</h1>
-        <p>Hi folks!. Welcome to Katik :]</p>
-        <p>A web app that can calculate the area and perimeter of two-dimensional shapes</p>
+    <header class="header" id="head-nav">
+        <h1>Welcome to Triangle Calculator</h1>
+        <h2>A web app that can calculate the area and perimeter of triangles</h2>
         <nav class="navigation">
-            <a href="#area-section">Area of Triangle</a>
-            <br>
-            <a href="">Perimeter of Triangle</a>
+            <button class="nav-button"><a href="#area-section-anchor">To Area of Triangle Calculator</a></button>
+            <button class="nav-button"><a href="#perimeter-section-anchor">To Perimeter of Triangle Calculator</a></button>
         </nav>
     </header>
-    <main class="input-luas-section">
-        <div>
-            <h2 id="area-section">Area of Triangle</h2>
-        </div>
-        <img class="area-formula" src="https://helpingwithmath.com/wp-content/uploads/2021/11/image-47.png" alt="area-of-triangle">
-        <p>Formula for the area of a triangle is:</p>
-        <p id="area-formula-text">A= 1/2 x b x h</p>
-        <ul>where
-            <li>A = Area</li>
-            <li>b = base length</li>
-            <li>h = height of the triangle</li>
-        </ul>
+    <main>
+        <section class="area-section" id="area-section">
+            <div id="area-section-anchor"></div>
+            <h2>Area of Triangle</h2>
+            <img class="area-formula" src="https://helpingwithmath.com/wp-content/uploads/2021/11/image-47.png" alt="area-of-triangle">
+            <p>Formula for the area of a triangle is:</p>
+            <em id="area-formula-text">A= 1/2 x b x h</em>
+            <ul>where
+                <li>A = Area</li>
+                <li>b = base length</li>
+                <li>h = height of the triangle</li>
+            </ul>
+            <hr>
+            <div class="input-area">
+                <h2>Calculate the area of a triangle</h2>
+                <input type="number" placeholder="Base length value" id="input-base" class="input">
+                <input type="number" placeholder="Height value" id="input-height" class="input">
+                <div class="result-box"></div>
+                <div class="buttons">
+                    <button id="calculate-Area">Calculate</button>
+                    <button id="reset-area">Reset</button>
+                </div>
+            </div>
+        </section>
         <hr>
-        <h2>Calculate the area of a triangle</h2>
-        <input type="number" placeholder="Base length value" id="input-base" class="katik-input">
-        <input type="number" placeholder="Height value" id="input-height" class="katik-input">
-        <div class="buttons">
-            <button id="calculate-Area">Calculate</button>
-            <button id="reset-area">Reset</button>
-        </div>
+        <div id="perimeter-section-anchor"></div>
+        <section class="perimeter-section" id="perimeter-section">
+            <h2>Perimeter of Triangle</h2>
+            <img class="perimeter-formula" src="https://helpingwithmath.com/wp-content/uploads/2021/11/image-47.png" alt="area-of-triangle">
+            <p>Formula for the perimeter of a triangle is:</p>
+            <em id="perimeter-formula-text">P= a + b + c</em>
+            <ul>where
+                <li>P = Perimeter</li>
+                <li>a = side a</li>
+                <li>b = side b</li>
+                <li>c = side c</li>
+            </ul>
+            <hr>
+            <div class="input-perimeter">
+                <h2>Calculate the perimeter of a triangle</h2>
+                <input type="number" placeholder="side a length value" id="input-side-a" class="input">
+                <input type="number" placeholder="side b length value" id="input-side-b" class="input">
+                <input type="number" placeholder="side c length value" id="input-side-c" class="input">
+                <div class="result-box"></div>
+                <div class="buttons">
+                    <button id="calculate-perimeter">Calculate</button>
+                    <button id="reset-perimeter">Reset</button>
+                </div>
+            </div>
+        </section>
     </main>
+    <script src="js/script.js"></script>
 </body>
 </html>
