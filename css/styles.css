@@ -202,16 +202,19 @@ button:active {
     text-align: center;
 }
 
+/* MOBILE VIEW */
+
 @media only screen and (max-width: 900px) {
     h1 {
         align-self: auto;
         text-align: center;
         font-size: 30px;
         justify-content: center;
+        margin-bottom: 10px;
     }
 
     .header> h2 {
-       visibility: hidden;
+        visibility: hidden;
     }
 
     .navigation {
