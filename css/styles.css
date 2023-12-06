@@ -201,3 +201,55 @@ button:active {
 #perimeter-formula-text {
     text-align: center;
 }
+
+@media only screen and (max-width: 900px) {
+    h1 {
+        align-self: auto;
+        text-align: center;
+        font-size: 30px;
+        justify-content: center;
+    }
+
+    .header> h2 {
+       visibility: hidden;
+    }
+
+    .navigation {
+        margin-top: -50px;
+        align-self: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .area-section>h2 {
+        font-size: 20px;
+        padding: 20px 0px;
+    }
+
+    .input-area {
+        display: flex;
+        flex-direction: column;
+        margin-top: -20px;
+      }
+
+    .perimeter-section>h2 {
+        font-size: 20px;
+        padding: 20px 0px;
+    }
+
+    .input-perimeter {
+        display: flex;
+        flex-direction: column;
+        margin-top: -20px;
+      }
+
+    .input {
+        margin: 5px 0px;
+    }
+
+    .buttons {
+        margin-top: -5px;
+    }
+
+  }
+  

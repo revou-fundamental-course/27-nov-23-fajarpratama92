@@ -56,8 +56,8 @@ function calculateArea() {
   }
 
   // Append the result box to the input area
-  const inputArea = document.querySelector('.input-area');
-  inputArea.insertBefore(resultBoxArea, document.querySelector('.buttons'));
+  const inputArea = document.querySelector('#input-area');
+  inputArea.insertBefore(resultBoxArea, document.querySelector('#area-buttons'));
 }
 
 // Function to calculate the perimeter of a triangle
@@ -98,8 +98,8 @@ function calculatePerimeter() {
   }
 
   // Append the result box to the input area
-  const inputPerimeter = document.querySelector('.input-perimeter');
-  inputPerimeter.insertBefore(resultBoxPerimeter, document.querySelector('.input-parameter'));
+  const inputPerimeter = document.querySelector('#input-perimeter');
+  inputPerimeter.insertBefore(resultBoxPerimeter, document.querySelector('#perimeter-buttons'));
 }
 
 // Function to reset the input fields and result box
